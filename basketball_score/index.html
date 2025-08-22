@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+         <h1>Basketball Scoreboard</h1>
+        <div class="container">
+                <!--Home-->
+        <div class="board-title">
+            <h2>HOME</h2>
+            <div class="board-title-main">
+              <div id="home-point">0</div>
+            </div>
+            <div>
+                <!--Button-->
+                <button class="home-point-btn" onclick="increaseHomeScoreOne()">+1</button>
+                <button class="home-point-btn" onclick="increaseHomeScoreTwo()">+2</button>
+                <button class="home-point-btn" onclick="increaseHomeScoreThree()">+3</button>
+            </div>
+        </div>
+              <!--Guest-->
+            <div class="board-title">
+            <h2>GUEST</h2>
+              <div class="board-title-main">
+                <div id="guest-point">0</div>
+            </div>
+            <div>
+                <!--Button-->
+                <button class="guest-point-btn" onclick="increaseGuestScoreOne()">+1</button>
+                <button class="guest-point-btn" onclick="increaseGuestScoreTwo()">+2</button>
+                <button class="guest-point-btn" onclick="increaseGuestScoreThree()">+3</button>
+            </div>
+           </div>
+         </div>
+         <div>
+             <button class="btn-reset" onclick="resetScore()">Reset</button>
+         </div>
+        <script src="index.js"></script>
+    </body>
+</html>
